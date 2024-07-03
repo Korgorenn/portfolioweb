@@ -420,4 +420,40 @@ footer ul li a img:hover {
 footer p {
     margin-top: 1rem;
 }
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+    }
 
+    nav ul {
+        justify-content: flex-end;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .content {
+        text-align: center;
+    }
+
+    .cta-buttons button {
+        width: 100%;
+    }
+
+    .About\ Me,
+    .Skills,
+    .Projects,
+    .EXPERIENCE {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
